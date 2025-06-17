@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  background-color: #222222;
+  max-width: 25rem;
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.display {
+  width: 100%;
+  height: 5rem;
+  background-color: #111111;
+  color: rgb(10, 238, 10);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  /* font-size: 30px; */
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.buttonscontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 20px 0px;
+  user-select: none;
+}
+.buttonscontainer button {
+  width: 100%;
+  border-radius: 12px;
+  background-color: #333333;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 20px ;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ transition: all 0.2s ease;
+}
+.buttonscontainer button:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+.buttonscontainer button:active {
+  transform: scale(0.95);
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.buttonscontainer .clearbtn {
+  background-color: #ff3b30;
+  grid-column: span 3;
+}
+.buttonscontainer .operator {
+  background-color: #ff9500;
+}
+.buttonscontainer .equalto {
+  grid-column: span 2;
+
+  background-color:#007aff;
+}
+
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .display {
+    font-size: 30px;
+  }
+
+  .buttonscontainer button {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+}

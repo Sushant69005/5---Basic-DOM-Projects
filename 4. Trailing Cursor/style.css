@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.smallcursor {
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 100%;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  transform: translate(-50% -50%);
+}
+
+.shadowcursor {
+  height: 70px;
+  width: 70px;
+  background-color: red;
+  border-radius: 100%;
+  filter: blur(35px);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  transform: translate(-50% -50%);
+}
